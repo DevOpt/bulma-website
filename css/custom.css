@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+
+body {
+  font-family: 'Merriweather', serif !important; }
+
+.is-primary {
+    background: #8125FB !important;
+}
+
+.is-padding{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+}
+
+.fa-grey{
+    color: gray !important;
+}
+.fa-grey:hover{
+    color: black !important;
+}
+
+.is-outline{
+  color: #fff !important;
+  background-color: #A637F8 !important;
+  border: none;
+  border-radius: 45px;
+  /*box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);*/
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.is-outline:hover{
+  box-shadow: 0px 15px 20px rgba(127, 0, 255, .3) !important;
+  transform: translateY(-5px);
+}
+
+.is-bold{
+  letter-spacing: 1.5px;
+  padding: 8px 25px !important;
+  font-size: 18px !important;
+  font-family: 'Pathway Gothic One', sans-serif !important;
+  text-transform: uppercase !important;
+  color: #fff !important;
+  background-color: #A637F8 !important;
+  border: none;
+  border-radius: 45px !important;
+  /*box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);*/
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.is-bold:hover{
+  box-shadow: 0px 15px 20px rgba(127, 0, 255, .3) !important;
+  transform: translateY(-5px);
+}
+
+.is-bold-inverted{
+    background-image: #fff !important;
+    transition: all 0.3s ease 0s;
+}
+.is-bold-inverted:hover{
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, .1) !important;/*linear-gradient(to right, #8125FB 0%, #D627FB 100%) !important;*/
+    transform: translateY(-4px);
+}
+
+.ide{
+    background-color: black !important;
+    color: white !important;
+}
+
+.img-card{
+    border-radius: 20px !important;
+    box-shadow: 0px 2px 82px 0px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0px 2px 82px 0px rgba(0, 0, 0, 0.10);
+    -webkit-box-shadow: 0px 2px 82px 0px rgba(0, 0, 0, 0.10);
+    transition: all 0.3s ease 0s;
+}
+
+.img-card:hover{
+    box-shadow: 0px 2px 82px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 82px 0px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 82px 0px rgba(0, 0, 0, 0.25);
+    transform: translateY(-10px);
+}
+
+.has-bg-img{
+  background: url('../images/background.jpg') center !important;
+  background-size:cover !important;
+}
+
+.is-center{
+  margin: 0 auto !important;
+  width: 140px !important;
+}
+
+.div-center{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.div-centered{
+  max-width: 50%;
+}
