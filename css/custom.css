@@ -85,8 +85,9 @@ body {
 }
 
 .has-bg-img{
-  background: url('../images/background.jpg') center !important;
-  background-size:cover !important;
+  #background: url('../images/background.jpg') center !important;
+  #background-size:cover !important;
+  background-color: #f4f9f9 !important;
 }
 
 .is-center{
@@ -101,4 +102,9 @@ justify-content: center;
 }
 .div-centered{
   max-width: 50%;
+}
+
+.shadow{
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, .1) !important;
+  border: none !important;
 }
