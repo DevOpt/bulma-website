@@ -1,1 +1,1 @@
-Start package for [Bulma](http://bulma.io)
+Personal website built using [Bulma](http://bulma.io) framework.
