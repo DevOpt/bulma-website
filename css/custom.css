@@ -85,9 +85,9 @@ body {
 }
 
 .has-bg-img{
-  #background: url('../images/background.jpg') center !important;
-  #background-size:cover !important;
-  background-color: #f4f9f9 !important;
+  /*background: url('../images/background.jpg') center !important;
+  background-size:cover !important; */
+  background-color: #f4f9f9 !important; /*#f4f9f9*/
 }
 
 .is-center{
@@ -107,4 +107,17 @@ justify-content: center;
 .shadow{
   box-shadow: 0px 10px 50px rgba(0, 0, 0, .1) !important;
   border: none !important;
+}
+
+.social{
+  background-color: #f7fcfc !important;
+  border-radius: 50% !important;
+  height: 38px;
+  width: 38px;
+  transition: all 0.3s ease 0s;
+}
+
+.social:hover{
+  background-color: #fff !important;
+
 }
