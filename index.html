@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="css/custom.css">
       <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
       <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
       <script>
          (function() {
            var burger = document.querySelector('.burger');
@@ -19,6 +20,32 @@
            menu.classList.toggle('is-active');
            });
          })();
+
+         function toggle(id) {
+            var work1 = document.getElementById("work1")
+            var work2 = document.getElementById("work2")
+            var work3 = document.getElementById("work3")
+
+            var act1 = document.getElementById("act1")
+            var act2 = document.getElementById("act2")
+            var act3 = document.getElementById("act3")
+
+            console.log(id);
+            if (id == 1 || id == "exit1") {
+              work1.classList.toggle("is-active");
+            } else if (id ==2 || id == "exit2") {
+              work2.classList.toggle("is-active");
+            } else if (id ==3 || id == "exit3") {
+              work3.classList.toggle("is-active");
+            } else if (id ==4 || id == "exit4") {
+              act1.classList.toggle("is-active");
+            } else if (id ==5 || id == "exit5") {
+              act2.classList.toggle("is-active");
+            } else if (id ==6 || id == "exit6") {
+              act3.classList.toggle("is-active");
+            }
+
+        }
       </script>
    </head>
    <body>
@@ -28,8 +55,9 @@
             <nav class="navbar">
                <div class="container">
                   <div class="navbar-brand">
-                     <a class="navbar-item">
-                     <img src="https://bulma.io/images/bulma-logo.png" alt="Logo">
+                     <a class="navbar-item" href="index.html">
+                     <img src="images/logo.png" alt="Logo">
+                     <!--p class="title logo">abdurahman</p-->
                      </a>
                      <span class="navbar-burger burger" data-target="navbarMenuHeroB">
                      <span></span>
@@ -39,10 +67,10 @@
                   </div>
                   <div id="navbarMenuHeroB" class="navbar-menu">
                      <div class="navbar-end">
-                        <a class="navbar-item is-active">Projects</a>
-                        <a class="navbar-item">Portfolio</a>
-                        <a class="navbar-item">Experience</a>
-                        <a class="navbar-item">About</a>
+                        <a class="navbar-item" href="#project">Projects</a>
+                        <a class="navbar-item" href="#work">Experience</a>
+                        <!--a class="navbar-item" href="#portfolio">Portfolio</a-->
+                        <a class="navbar-item" href="#about">About</a>
                      </div>
                   </div>
                </div>
@@ -56,11 +84,11 @@
                         Hello World!
                      </h1>
                      <h2 class="subtitle is-5">
-                        My name is Abdurahman Sherif! <br> I'm a Software Engineering intern at Johnson & Johnson.
+                        My name is Abdurahman Sherif! <br> Looking for Software Engineering internship.
                      </h2>
                      <div class="field is-grouped is-center">
                         <p class="control">
-                           <a class="button is-medium is-primary is-rounded is-bold" href="http://bulma.io">
+                           <a class="button is-medium is-primary is-rounded is-bold" href="#project">
                            <strong class="has-text-weight-semibold">Learn more</strong>
                            </a>
                         </p>
@@ -72,83 +100,92 @@
       </section>
 
       <!-- Projects section -->
-      <section class="hero is-medium has-bg-img">
+      <section class="hero is-medium has-bg-img" id="project">
          <div class="hero-body">
             <div class="container">
                <p class="title has-text-centered">Projects</p>
                <div class="columns">
                   <div class="column">
-                     <div class="card shadow">
-                        <div class="card-image">
-                           <figure class="image is-4by4">
-                              <img src="images/donation.png" alt="Placeholder image">
-                           </figure>
-                        </div>
-                        <div class="card-content">
-                           <div class="media">
-                              <div class="media-content">
-                                 <p class="title is-5">Donation Bot</p>
-                                 <p class="subtitle is-7">Messenger Bot</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                     <a href="https://github.com/DevOpt/donation-bot">
+                       <div class="card link-shadow">
+                          <div class="card-image">
+                             <figure class="image is-4by4">
+                                <img src="images/donation.png" alt="Placeholder image">
+                             </figure>
+                          </div>
+                          <div class="card-content">
+                             <div class="media">
+                                <div class="media-content">
+                                   <p class="title is-5">Donation Bot</p>
+                                   <p class="subtitle is-7">Messenger Bot</p>
+                                </div>
+                             </div>
+                          </div>
+                       </div>
+                     </a>
+
                   </div>
                   <div class="column">
-                     <div class="card shadow">
-                        <div class="card-image">
-                           <figure class="image is-4by4">
-                              <img src="images/alexa.png" alt="Placeholder image">
-                           </figure>
-                        </div>
-                        <div class="card-content">
-                           <div class="media">
-                              <div class="media-content">
-                                 <p class="title is-5">Design Quotes</p>
-                                 <p class="subtitle is-7">Alexa Skill</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                    <a href="https://github.com/DevOpt/design-quotes-alexa-skill">
+                      <div class="card link-shadow">
+                         <div class="card-image">
+                            <figure class="image is-4by4">
+                               <img src="images/alexa.png" alt="Placeholder image">
+                            </figure>
+                         </div>
+                         <div class="card-content">
+                            <div class="media">
+                               <div class="media-content">
+                                  <p class="title is-5">Design Quotes</p>
+                                  <p class="subtitle is-7">Alexa Skill</p>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                    </a>
                   </div>
                   <div class="column">
-                     <div class="card shadow">
-                        <div class="card-image">
-                           <figure class="image is-4by4">
-                              <img src="images/anadose.png" alt="Placeholder image">
-                           </figure>
-                        </div>
-                        <div class="card-content">
-                           <div class="media">
-                              <div class="media-content">
-                                 <p class="title is-5">Anadose</p>
-                                 <p class="subtitle is-7">iOS App</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                    <a href="https://devpost.com/software/anadose">
+                      <div class="card link-shadow">
+                         <div class="card-image">
+                            <figure class="image is-4by4">
+                               <img src="images/anadose.png" alt="Placeholder image">
+                            </figure>
+                         </div>
+                         <div class="card-content">
+                            <div class="media">
+                               <div class="media-content">
+                                  <p class="title is-5">Anadose</p>
+                                  <p class="subtitle is-7">iOS App</p>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                    </a>
                   </div>
                   <div class="column">
-                     <div class="card shadow">
-                        <div class="card-image">
-                           <figure class="image is-4by4">
-                              <img src="images/website.png" alt="Placeholder image">
-                           </figure>
-                        </div>
-                        <div class="card-content">
-                           <div class="media">
-                              <div class="media-content">
-                                 <p class="title is-5">Azzan</p>
-                                 <p class="subtitle is-7">Author's Website</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                    <a href="http://www.azzanyadinisrael.com/">
+                      <div class="card link-shadow">
+                         <div class="card-image">
+                            <figure class="image is-4by4">
+                               <img src="images/website.png" alt="Placeholder image">
+                            </figure>
+                         </div>
+                         <div class="card-content">
+                            <div class="media">
+                               <div class="media-content">
+                                  <p class="title is-5">Azzan</p>
+                                  <p class="subtitle is-7">Author's Website</p>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                    </a>
                   </div>
                </div>
                <div class="field is-grouped is-center">
                   <p class="control">
-                     <a class="button is-medium is-primary is-rounded is-bold" href="http://bulma.io">
+                     <a class="button is-medium is-primary is-rounded is-bold" href="https://github.com/DevOpt/">
                      <strong class="has-text-weight-semibold">More on GitHub</strong>
                      </a>
                   </p>
@@ -158,37 +195,67 @@
       </section>
 
       <!-- Work experience section -->
-      <section class="hero is-medium has-bg-img">
+      <section class="hero is-medium has-bg-img" id="work">
          <div class="hero-body">
             <div class="container">
                <p class="title has-text-centered">Work Experience</p>
                <div class="columns">
                   <div class="column">
-                     <div class="card shadow">
-                        <div class="card-content">
-                           <div class="media">
-                              <div class="media-left">
-                                 <figure class="image is-48x48">
-                                    <img src="images/jnj.png" alt="Placeholder image">
-                                 </figure>
-                              </div>
-                              <div class="media-content">
-                                 <p class="title is-5">Data Science Intern</p>
-                                 <p class="subtitle is-7">Johnson & Johnson • May 2018 - Present</p>
-                              </div>
-                           </div>
-                           <div class="content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                              <a href="#">#css</a> <a href="#">#responsive</a>
-                              <br>
-                              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                           </div>
+                      <div id="1" class="card link-shadow" onclick="toggle(this.id)">
+                         <div class="card-content">
+                            <div class="media">
+                               <div class="media-left">
+                                  <figure class="image is-48x48">
+                                     <img src="images/jnj.png" alt="Placeholder image">
+                                  </figure>
+                               </div>
+                               <div class="media-content">
+                                  <p class="title is-5">Data Science Intern</p>
+                                  <p class="subtitle is-7">Johnson & Johnson • May 2018 - Aug 2018</p>
+                               </div>
+                            </div>
+                            <div class="content">
+                              <ul>
+                                <li>Built content-based recommender system in R to help employees utilize resources provided by the organization.</li>
+                                <li><a>more...</a></li>
+                              </ul>
+                            </div>
+                         </div>
+                      </div>
+                      <div id="work1" class="modal">
+                        <div class="modal-background"></div>
+                        <div class="modal-content">
+                          <div class="card">
+                            <div class="card-image">
+                               <figure class="image is-4by4">
+                                  <img src="images/jnj_banner.png" alt="Placeholder image">
+                               </figure>
+                            </div>
+                             <div class="card-content">
+                                <div class="media">
+
+                                   <div class="media-content">
+                                      <p class="title is-5">Data Science Intern</p>
+                                      <p class="subtitle is-7">Johnson & Johnson • May 2018 - Aug 2018</p>
+                                   </div>
+                                </div>
+                                <div class="content">
+                                  <ul>
+                                    <li>Built content-based recommender system in R to help employees utilize resources provided by the organization.</li>
+                                    <li>Applied Machine learning to train the model and use nearest-neighbor method to provide personalized recommendations.</li>
+                                    <li>Made network analysis on eCommerce data through applying clustering algorithms and graph theory to provide useful insights.</li>
+                                    <li>Applied Natural language processing to preprocess audit data and apply LDA topic modeling.</li>
+                                    <li>Performed analysis on multiple lemmatizer libraries in R and was able to improve the runtime of by 36%.</li>
+                                  </ul>
+                                </div>
+                             </div>
+                          </div>
                         </div>
-                     </div>
+                        <button id="exit1" class="modal-close is-large" aria-label="close" onclick="toggle(this.id)"></button>
+                      </div>
                   </div>
                   <div class="column">
-                     <div class="card shadow">
+                     <div id="2" class="card link-shadow" onclick="toggle(this.id)">
                         <div class="card-content">
                            <div class="media">
                               <div class="media-left">
@@ -202,17 +269,46 @@
                               </div>
                            </div>
                            <div class="content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                              <a href="#">#css</a> <a href="#">#responsive</a>
-                              <br>
-                              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                             <ul>
+                               <li>Added custom features to team SharePoint site by applying alternative CSS and embedding JavaScript.</li>
+                               <li><a>more...</a></li>
+                             </ul>
                            </div>
                         </div>
                      </div>
+                     <div id="work2" class="modal">
+                       <div class="modal-background"></div>
+                       <div class="modal-content">
+                         <div class="card">
+                           <div class="card-image">
+                              <figure class="image is-4by4">
+                                 <img src="images/jnj_banner.png" alt="Placeholder image">
+                              </figure>
+                           </div>
+                            <div class="card-content">
+                               <div class="media">
+
+                                  <div class="media-content">
+                                    <p class="title is-5">IT Co-op</p>
+                                    <p class="subtitle is-7">Johnson & Johnson • Jun 2017 - Dec 2017</p>
+                                  </div>
+                               </div>
+                               <div class="content">
+                                 <ul>
+                                   <li>Added custom features to team SharePoint site by applying alternative CSS and embedding JavaScript.</li>
+                                   <li>Applied Tableau JavaScript API to enhanced the visualizations of dashboards.</li>
+                                   <li>Delivered data sets, metrics, and reports from the data warehouse to Application Services organization.</li>
+                                  </ul>
+                               </div>
+                            </div>
+                         </div>
+
+                       </div>
+                       <button id="exit2" class="modal-close is-large" aria-label="close" onclick="toggle(this.id)"></button>
+                     </div>
                   </div>
                   <div class="column">
-                     <div class="card shadow">
+                     <div id="3" class="card link-shadow" onclick="toggle(this.id)">
                         <div class="card-content">
                            <div class="media">
                               <div class="media-left">
@@ -226,13 +322,42 @@
                               </div>
                            </div>
                            <div class="content">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                              <a href="#">#css</a> <a href="#">#responsive</a>
-                              <br>
-                              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                             <ul>
+                               <li>Developed web-based UIs using JavaScript/Bootstrap framework to enhance responsiveness of the website.</li>
+                               <li><a>more...</a></li>
+                             </ul>
                            </div>
                         </div>
+                     </div>
+                     <div id="work3" class="modal">
+                       <div class="modal-background"></div>
+                       <div class="modal-content">
+                         <div class="card">
+                           <div class="card-image">
+                              <figure class="image is-4by4">
+                                 <img src="images/ru_banner.png" alt="Placeholder image">
+                              </figure>
+                           </div>
+                            <div class="card-content">
+                               <div class="media">
+
+                                  <div class="media-content">
+                                    <p class="title is-5">Webmaster / Graphic Designer</p>
+                                    <p class="subtitle is-7">Rutgers University • Feb 2017 - Present</p>
+                                  </div>
+                               </div>
+                               <div class="content">
+                                 <ul>
+                                   <li>Maintained the operation of research department’s website <a href="http://infoseeking.org/">InfoSeeking.org</a></li>
+                                   <li>Designed banners and icons for the website using Adobe Photoshop.</li>
+                                   <li>Developed web-based UIs using JavaScript and Bootstrap to enhance responsiveness of the website.</li>
+                                  </ul>
+                               </div>
+                            </div>
+                         </div>
+
+                       </div>
+                       <button id="exit3" class="modal-close is-large" aria-label="close" onclick="toggle(this.id)"></button>
                      </div>
                   </div>
                </div>
@@ -241,61 +366,144 @@
       </section>
 
       <!-- Activities section -->
-      <section class="hero is-medium has-bg-img">
+      <section class="hero is-medium has-bg-img" style="background-color: #F1F2F5 !important;">
          <div class="hero-body">
             <div class="container">
                <p class="title has-text-centered">Activities</p>
                <div class="columns">
                   <div class="column">
-                     <div class="card shadow">
-                        <div class="card-content">
-                           <div class="media">
-                              <div class="media-left">
-                                 <figure class="image is-48x48">
-                                    <img src="images/facebook.png" alt="Placeholder image">
-                                 </figure>
-                              </div>
-                              <div class="media-content">
-                                 <p class="title is-5">F8 Hackathon</p>
-                                 <p class="subtitle is-7">Facebook Developer Conference • 2018</p>
-                              </div>
-                           </div>
+                      <div id="4" class="card link-shadow" onclick="toggle(this.id)">
+                         <div class="card-content">
+                            <div class="media">
+                               <div class="media-left">
+                                  <figure class="image is-48x48">
+                                     <img src="images/facebook.png" alt="Placeholder image">
+                                  </figure>
+                               </div>
+                               <div class="media-content">
+                                  <p class="title is-5">F8 Hackathon</p>
+                                  <p class="subtitle is-7">Facebook Developer Conference • 2018</p>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div id="act1" class="modal">
+                        <div class="modal-background"></div>
+                        <div class="modal-content">
+                          <div class="card">
+                            <div class="card-image">
+                               <figure class="image is-4by4">
+                                  <img src="images/f8_banner.png" alt="Placeholder image">
+                               </figure>
+                            </div>
+                             <div class="card-content">
+                                <div class="media">
+
+                                   <div class="media-content">
+                                     <p class="title is-5">F8 2018 Hackathon</p>
+                                     <p class="subtitle is-7">Facebook Developer Conference • May 2018</p>
+                                   </div>
+                                </div>
+                                <div class="content">
+                                  <ul>
+                                    <li>Attended the annual Facebook developer conference.</li>
+                                    <li>Developed web-based UIs using JavaScript and Bootstrap to enhance responsiveness of the website.</li>
+                                   </ul>
+                                </div>
+                             </div>
+                          </div>
                         </div>
-                     </div>
+                        <button id="exit4" class="modal-close is-large" aria-label="close" onclick="toggle(this.id)"></button>
+                      </div>
                   </div>
                   <div class="column">
-                     <div class="card shadow">
-                        <div class="card-content">
-                           <div class="media">
-                              <div class="media-left">
-                                 <figure class="image is-48x48">
-                                    <img src="images/irc.jpg" alt="Placeholder image">
-                                 </figure>
-                              </div>
-                              <div class="media-content">
-                                 <p class="title is-5">Spring Intern</p>
-                                 <p class="subtitle is-7">International Rescue Committee • 2018</p>
-                              </div>
-                           </div>
+                      <div id="5" class="card link-shadow" onclick="toggle(this.id)">
+                         <div class="card-content">
+                            <div class="media">
+                               <div class="media-left">
+                                  <figure class="image is-48x48">
+                                     <img src="images/irc.jpg" alt="Placeholder image">
+                                  </figure>
+                               </div>
+                               <div class="media-content">
+                                  <p class="title is-5">Spring Intern</p>
+                                  <p class="subtitle is-7">International Rescue Committee • 2018</p>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div id="act2" class="modal">
+                        <div class="modal-background"></div>
+                        <div class="modal-content">
+                          <div class="card">
+                            <div class="card-image">
+                               <figure class="image is-4by4">
+                                  <img src="images/irc_banner.png" alt="Placeholder image">
+                               </figure>
+                            </div>
+                             <div class="card-content">
+                                <div class="media">
+
+                                   <div class="media-content">
+                                     <p class="title is-5">Spring Intern</p>
+                                     <p class="subtitle is-7">International Rescue Committee • Dec 2017 - Jan 2018</p>
+                                   </div>
+                                </div>
+                                <div class="content">
+                                  <ul>
+                                    <li>Communicated with clients and direct them to appropriate staff members.</li>
+                                    <li>Interpreted Arabic and provided translations for clients and the staff members.</li>
+                                   </ul>
+                                </div>
+                             </div>
+                          </div>
                         </div>
-                     </div>
+                        <button id="exit5" class="modal-close is-large" aria-label="close" onclick="toggle(this.id)"></button>
+                      </div>
                   </div>
                   <div class="column">
-                     <div class="card shadow">
-                        <div class="card-content">
-                           <div class="media">
-                              <div class="media-left">
-                                 <figure class="image is-48x48">
-                                    <img src="images/goldman.png" alt="Placeholder image">
-                                 </figure>
-                              </div>
-                              <div class="media-content">
-                                 <p class="title is-5">Engineering Essentials</p>
-                                 <p class="subtitle is-7">Goldman Sachs • 2017</p>
-                              </div>
-                           </div>
+                      <div id="6" class="card link-shadow" onclick="toggle(this.id)">
+                         <div class="card-content">
+                            <div class="media">
+                               <div class="media-left">
+                                  <figure class="image is-48x48">
+                                     <img src="images/goldman.png" alt="Placeholder image">
+                                  </figure>
+                               </div>
+                               <div class="media-content">
+                                  <p class="title is-5">Engineering Essentials</p>
+                                  <p class="subtitle is-7">Goldman Sachs • 2017</p>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                      <div id="act3" class="modal">
+                        <div class="modal-background"></div>
+                        <div class="modal-content">
+                          <div class="card">
+                            <div class="card-image">
+                               <figure class="image is-4by4">
+                                  <img src="images/gc_banner.png" alt="Placeholder image">
+                               </figure>
+                            </div>
+                             <div class="card-content">
+                                <div class="media">
+
+                                   <div class="media-content">
+                                     <p class="title is-5">Engineering Essentials</p>
+                                     <p class="subtitle is-7">Goldman Sachs • May 2017</p>
+                                   </div>
+                                </div>
+                                <div class="content">
+                                  <ul>
+                                    <li>Engineering Essentials is a four day training program to help college students develop the essential skills and tools to prepare for a successful career as a software engineer along with mentorship with Software Engineers at Goldman Sachs.</li>
+                                   </ul>
+                                </div>
+                             </div>
+                          </div>
                         </div>
-                     </div>
+                        <button id="exit6" class="modal-close is-large" aria-label="close" onclick="toggle(this.id)"></button>
+                      </div>
                   </div>
                </div>
             </div>
@@ -303,7 +511,7 @@
       </section>
 
       <!-- Portfolio section -->
-      <section class="hero is-medium has-bg-img">
+      <!--section class="hero is-medium has-bg-img" id="portfolio">
          <div class="hero-body">
             <div class="container">
                <p class="title has-text-centered">Portfolio</p>
@@ -363,7 +571,54 @@
                </div>
             </div>
          </div>
-      </section>
+      </section-->
+
+      <!-- Request section -->
+      <!--section class="hero is-medium has-bg-img" style="background-color: #F1F2F5 !important;">
+        <div class="hero-body">
+           <div class="container">
+              <p class="title has-text-centered">Need a design?</p>
+              <div class="columns">
+                <div class="column"></div>
+                 <div class="column">
+
+                   Name input
+                   <div class="field">
+                      <label class="label">Name</label>
+                      <div class="control">
+                        <input class="input" type="text" placeholder="Your name">
+                      </div>
+                    </div>
+
+                    Email input
+                    <div class="field">
+                      <label class="label">Email</label>
+                      <div class="control">
+                        <input class="input is-danger" type="email" placeholder="Your email">
+                      </div>
+
+                    </div>
+                    
+                    Message input
+                    <div class="field">
+                     <label class="label">Message</label>
+                     <div class="control">
+                       <textarea class="textarea" placeholder="Your design request"></textarea>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="column"></div>
+              </div>
+              <div class="field is-grouped is-center">
+                 <p class="control">
+                    <a class="button is-medium is-primary is-rounded is-bold" href="https://github.com/DevOpt/">
+                    <strong class="has-text-weight-semibold">Request</strong>
+                    </a>
+                 </p>
+              </div>
+           </div>
+        </div>
+      </section-->
 
       <!-- Skills section -->
       <section class="hero is-medium has-bg-img">
@@ -394,7 +649,7 @@
       </section>
 
       <!-- About section -->
-      <section class="hero is-medium has-bg-img">
+      <section class="hero is-medium has-bg-img" id="about">
          <div class="hero-body">
             <div class="container">
                <p class="title has-text-centered">About</p>
