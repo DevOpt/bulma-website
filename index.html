@@ -1,708 +1,621 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Abdurahman Sherif</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="css/custom.css">
-      <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-      <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-      <script>
-         (function() {
-           var burger = document.querySelector('.burger');
-           var menu = document.querySelector('#'+burger.dataset.target);
-           burger.addEventListener('click', function() {
-           burger.classList.toggle('is-active');
-           menu.classList.toggle('is-active');
-           });
-         })();
-
-         function toggle(id) {
-            var work1 = document.getElementById("work1")
-            var work2 = document.getElementById("work2")
-            var work3 = document.getElementById("work3")
-
-            var act1 = document.getElementById("act1")
-            var act2 = document.getElementById("act2")
-            var act3 = document.getElementById("act3")
-
-            console.log(id);
-            if (id == 1 || id == "exit1") {
-              work1.classList.toggle("is-active");
-            } else if (id ==2 || id == "exit2") {
-              work2.classList.toggle("is-active");
-            } else if (id ==3 || id == "exit3") {
-              work3.classList.toggle("is-active");
-            } else if (id ==4 || id == "exit4") {
-              act1.classList.toggle("is-active");
-            } else if (id ==5 || id == "exit5") {
-              act2.classList.toggle("is-active");
-            } else if (id ==6 || id == "exit6") {
-              act3.classList.toggle("is-active");
-            }
-
-        }
-      </script>
-   </head>
-   <body>
-     <!-- Landing Page -->
-      <section class="hero is-fullheight has-bg-img">
-         <div class="hero-head">
-            <nav class="navbar">
-               <div class="container">
-                  <div class="navbar-brand">
-                     <a class="navbar-item" href="index.html">
-                     <img src="images/logo.png" alt="Logo">
-                     <!--p class="title logo">abdurahman</p-->
-                     </a>
-                     <span class="navbar-burger burger" data-target="navbarMenuHeroB">
-                     <span></span>
-                     <span></span>
-                     <span></span>
-                     </span>
-                  </div>
-                  <div id="navbarMenuHeroB" class="navbar-menu">
-                     <div class="navbar-end">
-                        <a class="navbar-item" href="#project">Projects</a>
-                        <a class="navbar-item" href="#work">Experience</a>
-                        <!--a class="navbar-item" href="#portfolio">Portfolio</a-->
-                        <a class="navbar-item" href="#about">About</a>
-                     </div>
-                  </div>
-               </div>
-            </nav>
-         </div>
-         <div class="hero-body">
-            <div class="container has-text-centered">
-               <div class="columns">
-                  <div class="column ">
-                     <h1 class="title is-1 is-spaced" >
-                        Hello World!
-                     </h1>
-                     <h2 class="subtitle is-5">
-                        My name is Abdurahman Sherif, a former intern at Johnson & Johnson.
-                     </h2>
-                     <div class="field is-grouped is-center">
-                        <p class="control">
-                           <a class="button is-medium is-primary is-rounded is-bold" href="#project">
-                           <strong class="has-text-weight-semibold">Learn more</strong>
-                           </a>
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <!-- Projects section -->
-      <section class="hero is-medium has-bg-img" id="project">
-         <div class="hero-body">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abdurahman Sherif</title>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Arimo:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- Title, without branding. -->
+ <meta property="og:title" content="Abdurahman Sherif Portfolio" />
+ <!-- Name, not URL (e.g. Apple, not apple.com) -->
+ <meta property="og:site_name" content="Abdurahman Sherif" />
+ <!-- URL. Should match canonical URL for SEO. Unique identifier for your article. -->
+ <meta property="og:url" content="https://abdurahmansherif.com" />
+ <!-- OPTIONAL description. 2-4 sentences. -->
+ <meta property="og:description" content="Minterns is a community for Muslim interns and New Grads based in the Bay Area.  The community aims to build to build life-long relationships, a network like no other, and foster Islamic teachings & good character" />
+ <!-- Image for article. Facebook suggests at least 1200 x 630. -->
+ <meta property="og:image" content="https://minterns.org/og.png" />
+ <meta property="og:image:width" content="1200" />
+ <meta property="og:image:height" content="630" />
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
             <div class="container">
-               <p class="title has-text-centered">Projects</p>
-               <div class="columns">
-                  <div class="column">
-                     <a href="https://github.com/DevOpt/donation-bot">
-                       <div class="card link-shadow">
-                          <div class="card-image">
-                             <figure class="image is-4by4">
-                                <img src="images/donation.png" alt="Placeholder image">
-                             </figure>
-                          </div>
-                          <div class="card-content">
-                             <div class="media">
-                                <div class="media-content">
-                                   <p class="title is-5">Donation Bot</p>
-                                   <p class="subtitle is-7">Messenger Bot</p>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                     </a>
-
-                  </div>
-                  <div class="column">
-                    <a href="https://github.com/DevOpt/design-quotes-alexa-skill">
-                      <div class="card link-shadow">
-                         <div class="card-image">
-                            <figure class="image is-4by4">
-                               <img src="images/alexa.png" alt="Placeholder image">
-                            </figure>
-                         </div>
-                         <div class="card-content">
-                            <div class="media">
-                               <div class="media-content">
-                                  <p class="title is-5">Design Quotes</p>
-                                  <p class="subtitle is-7">Alexa Skill</p>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="column">
-                    <a href="https://devpost.com/software/anadose">
-                      <div class="card link-shadow">
-                         <div class="card-image">
-                            <figure class="image is-4by4">
-                               <img src="images/anadose.png" alt="Placeholder image">
-                            </figure>
-                         </div>
-                         <div class="card-content">
-                            <div class="media">
-                               <div class="media-content">
-                                  <p class="title is-5">Anadose</p>
-                                  <p class="subtitle is-7">iOS App</p>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="column">
-                    <a href="http://www.azzanyadinisrael.com/">
-                      <div class="card link-shadow">
-                         <div class="card-image">
-                            <figure class="image is-4by4">
-                               <img src="images/website.png" alt="Placeholder image">
-                            </figure>
-                         </div>
-                         <div class="card-content">
-                            <div class="media">
-                               <div class="media-content">
-                                  <p class="title is-5">Azzan</p>
-                                  <p class="subtitle is-7">Author's Website</p>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                    </a>
-                  </div>
-               </div>
-               <div class="field is-grouped is-center">
-                  <p class="control">
-                     <a class="button is-medium is-primary is-rounded is-bold" href="https://github.com/DevOpt/">
-                     <strong class="has-text-weight-semibold">More on GitHub</strong>
-                     </a>
-                  </p>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <!-- Work experience section -->
-      <section class="hero is-medium has-bg-img" id="work">
-         <div class="hero-body">
-            <div class="container">
-               <p class="title has-text-centered">Work Experience</p>
-               <div class="columns">
-                  <div class="column">
-                      <div id="1" class="card link-shadow" onclick="toggle(this.id)">
-                         <div class="card-content">
-                            <div class="media">
-                               <div class="media-left">
-                                  <figure class="image is-48x48">
-                                     <img src="images/jnj.png" alt="Placeholder image">
-                                  </figure>
-                               </div>
-                               <div class="media-content">
-                                  <p class="title is-5">Data Science Intern</p>
-                                  <p class="subtitle is-7">Johnson & Johnson • May 2018 - Aug 2018</p>
-                               </div>
-                            </div>
-                            <div class="content">
-                              <ul>
-                                <li>Built content-based recommender system in R to help employees utilize resources provided by the organization.</li>
-                                <li><a>more...</a></li>
-                              </ul>
-                            </div>
-                         </div>
-                      </div>
-                      <div id="work1" class="modal">
-                        <div class="modal-background"></div>
-                        <div class="modal-content">
-                          <div class="card">
-                            <div class="card-image">
-                               <figure class="image is-4by4">
-                                  <img src="images/jnj_banner.png" alt="Placeholder image">
-                               </figure>
-                            </div>
-                             <div class="card-content">
-                                <div class="media">
-
-                                   <div class="media-content">
-                                      <p class="title is-5">Data Science Intern</p>
-                                      <p class="subtitle is-7">Johnson & Johnson • May 2018 - Aug 2018</p>
-                                   </div>
-                                </div>
-                                <div class="content">
-                                  <ul>
-                                    <li>Built content-based recommender system in R to help employees utilize resources provided by the organization.</li>
-                                    <li>Applied Machine learning to train the model and use nearest-neighbor method to provide personalized recommendations.</li>
-                                    <li>Made network analysis on eCommerce data through applying clustering algorithms and graph theory to provide useful insights.</li>
-                                    <li>Applied Natural language processing to preprocess audit data and apply LDA topic modeling.</li>
-                                    <li>Performed analysis on multiple lemmatizer libraries in R and was able to improve the runtime of by 36%.</li>
-                                  </ul>
-                                </div>
-                             </div>
-                          </div>
-                        </div>
-                        <button id="exit1" class="modal-close is-large" aria-label="close" onclick="toggle(this.id)"></button>
-                      </div>
-                  </div>
-                  <div class="column">
-                     <div id="2" class="card link-shadow" onclick="toggle(this.id)">
-                        <div class="card-content">
-                           <div class="media">
-                              <div class="media-left">
-                                 <figure class="image is-48x48">
-                                    <img src="images/jnj.png" alt="Placeholder image">
-                                 </figure>
-                              </div>
-                              <div class="media-content">
-                                 <p class="title is-5">Software Engineering Co-op</p>
-                                 <p class="subtitle is-7">Johnson & Johnson • Jun 2017 - Dec 2017</p>
-                              </div>
-                           </div>
-                           <div class="content">
-                             <ul>
-                               <li>Added custom features to team SharePoint site by applying alternative CSS and embedding JavaScript.</li>
-                               <li><a>more...</a></li>
-                             </ul>
-                           </div>
-                        </div>
-                     </div>
-                     <div id="work2" class="modal">
-                       <div class="modal-background"></div>
-                       <div class="modal-content">
-                         <div class="card">
-                           <div class="card-image">
-                              <figure class="image is-4by4">
-                                 <img src="images/jnj_banner.png" alt="Placeholder image">
-                              </figure>
-                           </div>
-                            <div class="card-content">
-                               <div class="media">
-
-                                  <div class="media-content">
-                                    <p class="title is-5">Software Engineering Co-op</p>
-                                    <p class="subtitle is-7">Johnson & Johnson • Jun 2017 - Dec 2017</p>
-                                  </div>
-                               </div>
-                               <div class="content">
-                                 <ul>
-                                   <li>Added custom features to team SharePoint site by applying alternative CSS and embedding JavaScript.</li>
-                                   <li>Applied Tableau JavaScript API to enhanced the visualizations of dashboards.</li>
-                                   <li>Delivered data sets, metrics, and reports from the data warehouse to Application Services organization.</li>
-                                  </ul>
-                               </div>
-                            </div>
-                         </div>
-
-                       </div>
-                       <button id="exit2" class="modal-close is-large" aria-label="close" onclick="toggle(this.id)"></button>
-                     </div>
-                  </div>
-                  <div class="column">
-                     <div id="3" class="card link-shadow" onclick="toggle(this.id)">
-                        <div class="card-content">
-                           <div class="media">
-                              <div class="media-left">
-                                 <figure class="image is-48x48">
-                                    <img src="images/rutgers.png" alt="Placeholder image">
-                                 </figure>
-                              </div>
-                              <div class="media-content">
-                                 <p class="title is-5">Webmaster</p>
-                                 <p class="subtitle is-7">Rutgers University • Feb 2017 - Present</p>
-                              </div>
-                           </div>
-                           <div class="content">
-                             <ul>
-                               <li>Developed web-based UIs using JavaScript/Bootstrap framework to enhance responsiveness of the website.</li>
-                               <li><a>more...</a></li>
-                             </ul>
-                           </div>
-                        </div>
-                     </div>
-                     <div id="work3" class="modal">
-                       <div class="modal-background"></div>
-                       <div class="modal-content">
-                         <div class="card">
-                           <div class="card-image">
-                              <figure class="image is-4by4">
-                                 <img src="images/ru_banner.png" alt="Placeholder image">
-                              </figure>
-                           </div>
-                            <div class="card-content">
-                               <div class="media">
-
-                                  <div class="media-content">
-                                    <p class="title is-5">Webmaster / Graphic Designer</p>
-                                    <p class="subtitle is-7">Rutgers University • Feb 2017 - Present</p>
-                                  </div>
-                               </div>
-                               <div class="content">
-                                 <ul>
-                                   <li>Maintained the operation of research department’s website <a href="http://infoseeking.org/">InfoSeeking.org</a></li>
-                                   <li>Designed banners and icons for the website using Adobe Photoshop.</li>
-                                   <li>Developed web-based UIs using JavaScript and Bootstrap to enhance responsiveness of the website.</li>
-                                  </ul>
-                               </div>
-                            </div>
-                         </div>
-
-                       </div>
-                       <button id="exit3" class="modal-close is-large" aria-label="close" onclick="toggle(this.id)"></button>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <!-- Activities section -->
-      <section class="hero is-medium has-bg-img" style="background-color: #F1F2F5 !important;">
-         <div class="hero-body">
-            <div class="container">
-               <p class="title has-text-centered">Activities</p>
-               <div class="columns">
-                  <div class="column">
-                      <div id="4" class="card link-shadow" onclick="toggle(this.id)">
-                         <div class="card-content">
-                            <div class="media">
-                               <div class="media-left">
-                                  <figure class="image is-48x48">
-                                     <img src="images/facebook.png" alt="Placeholder image">
-                                  </figure>
-                               </div>
-                               <div class="media-content">
-                                  <p class="title is-5">F8 Hackathon</p>
-                                  <p class="subtitle is-7">Facebook Developer Conference • 2018</p>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                      <div id="act1" class="modal">
-                        <div class="modal-background"></div>
-                        <div class="modal-content">
-                          <div class="card">
-                            <div class="card-image">
-                               <figure class="image is-4by4">
-                                  <img src="images/f8_banner.png" alt="Placeholder image">
-                               </figure>
-                            </div>
-                             <div class="card-content">
-                                <div class="media">
-
-                                   <div class="media-content">
-                                     <p class="title is-5">F8 2018 Hackathon</p>
-                                     <p class="subtitle is-7">Facebook Developer Conference • May 2018</p>
-                                   </div>
-                                </div>
-                                <div class="content">
-                                  <ul>
-                                    <li>Attended the annual Facebook developer conference.</li>
-                                    <li>Developed web-based UIs using JavaScript and Bootstrap to enhance responsiveness of the website.</li>
-                                   </ul>
-                                </div>
-                             </div>
-                          </div>
-                        </div>
-                        <button id="exit4" class="modal-close is-large" aria-label="close" onclick="toggle(this.id)"></button>
-                      </div>
-                  </div>
-                  <div class="column">
-                      <div id="5" class="card link-shadow" onclick="toggle(this.id)">
-                         <div class="card-content">
-                            <div class="media">
-                               <div class="media-left">
-                                  <figure class="image is-48x48">
-                                     <img src="images/irc.jpg" alt="Placeholder image">
-                                  </figure>
-                               </div>
-                               <div class="media-content">
-                                  <p class="title is-5">Spring Intern</p>
-                                  <p class="subtitle is-7">International Rescue Committee • 2018</p>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                      <div id="act2" class="modal">
-                        <div class="modal-background"></div>
-                        <div class="modal-content">
-                          <div class="card">
-                            <div class="card-image">
-                               <figure class="image is-4by4">
-                                  <img src="images/irc_banner.png" alt="Placeholder image">
-                               </figure>
-                            </div>
-                             <div class="card-content">
-                                <div class="media">
-
-                                   <div class="media-content">
-                                     <p class="title is-5">Spring Intern</p>
-                                     <p class="subtitle is-7">International Rescue Committee • Dec 2017 - Jan 2018</p>
-                                   </div>
-                                </div>
-                                <div class="content">
-                                  <ul>
-                                    <li>Communicated with clients and direct them to appropriate staff members.</li>
-                                    <li>Interpreted Arabic and provided translations for clients and the staff members.</li>
-                                   </ul>
-                                </div>
-                             </div>
-                          </div>
-                        </div>
-                        <button id="exit5" class="modal-close is-large" aria-label="close" onclick="toggle(this.id)"></button>
-                      </div>
-                  </div>
-                  <div class="column">
-                      <div id="6" class="card link-shadow" onclick="toggle(this.id)">
-                         <div class="card-content">
-                            <div class="media">
-                               <div class="media-left">
-                                  <figure class="image is-48x48">
-                                     <img src="images/goldman.png" alt="Placeholder image">
-                                  </figure>
-                               </div>
-                               <div class="media-content">
-                                  <p class="title is-5">Engineering Essentials</p>
-                                  <p class="subtitle is-7">Goldman Sachs • 2017</p>
-                               </div>
-                            </div>
-                         </div>
-                      </div>
-                      <div id="act3" class="modal">
-                        <div class="modal-background"></div>
-                        <div class="modal-content">
-                          <div class="card">
-                            <div class="card-image">
-                               <figure class="image is-4by4">
-                                  <img src="images/gc_banner.png" alt="Placeholder image">
-                               </figure>
-                            </div>
-                             <div class="card-content">
-                                <div class="media">
-
-                                   <div class="media-content">
-                                     <p class="title is-5">Engineering Essentials</p>
-                                     <p class="subtitle is-7">Goldman Sachs • May 2017</p>
-                                   </div>
-                                </div>
-                                <div class="content">
-                                  <ul>
-                                    <li>Engineering Essentials is a four day training program to help college students develop the essential skills and tools to prepare for a successful career as a software engineer along with mentorship with Software Engineers at Goldman Sachs.</li>
-                                   </ul>
-                                </div>
-                             </div>
-                          </div>
-                        </div>
-                        <button id="exit6" class="modal-close is-large" aria-label="close" onclick="toggle(this.id)"></button>
-                      </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <!-- Portfolio section -->
-      <!--section class="hero is-medium has-bg-img" id="portfolio">
-         <div class="hero-body">
-            <div class="container">
-               <p class="title has-text-centered">Portfolio</p>
-               <div class="tabs is-centered">
-                  <ul>
-                     <li class="is-active"><a>All</a></li>
-                     <li><a>Posters</a></li>
-                     <li><a>Logos</a></li>
-                     <li><a>Photography</a></li>
-                  </ul>
-               </div>
-               <div class="columns">
-                  <div class="column">
-                     <div class="card shadow">
-                        <div class="card-image">
-                           <figure class="image is-4by4">
-                              <img src="images/donation.png" alt="Placeholder image">
-                           </figure>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="column">
-                     <div class="card shadow">
-                        <div class="card-image">
-                           <figure class="image is-4by4">
-                              <img src="images/placeholder.gif" alt="Placeholder image">
-                           </figure>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="column">
-                     <div class="card shadow">
-                        <div class="card-image">
-                           <figure class="image is-4by4">
-                              <img src="images/placeholder1.png" alt="Placeholder image">
-                           </figure>
-                        </div>
-                     </div>
-                     <br>
-                     <div class="card shadow">
-                        <div class="card-image">
-                           <figure class="image is-4by4">
-                              <img src="images/goldman.png" alt="Placeholder image">
-                           </figure>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="column">
-                     <div class="card shadow">
-                        <div class="card-image">
-                           <figure class="image is-4by4">
-                              <img src="images/goldman.png" alt="Placeholder image">
-                           </figure>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section-->
-
-      <!-- Request section -->
-      <!--section class="hero is-medium has-bg-img" style="background-color: #F1F2F5 !important;">
-        <div class="hero-body">
-           <div class="container">
-              <p class="title has-text-centered">Need a design?</p>
-              <div class="columns">
-                <div class="column"></div>
-                 <div class="column">
-
-                   Name input
-                   <div class="field">
-                      <label class="label">Name</label>
-                      <div class="control">
-                        <input class="input" type="text" placeholder="Your name">
-                      </div>
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <img src="images/main-logo.svg" style="width:120px" alt="logo">
+                            </a>
+                        </h1>
                     </div>
+                </div>
+            </div>
+        </header>
 
-                    Email input
-                    <div class="field">
-                      <label class="label">Email</label>
-                      <div class="control">
-                        <input class="input is-danger" type="email" placeholder="Your email">
-                      </div>
-
+        <main>
+            <section class="hero">
+				<div class="hero-left-decoration is-revealing"></div>
+				<div class="hero-right-decoration is-revealing"></div>
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0 is-revealing">Hello World!</h1>
+	                        <p class="hero-paragraph is-revealing">My name is <a href="#about-me">Abdurahman Sherif</a>, and I'm a Software Engineer intern at Facebook.</p>
+	                        <p class="hero-cta mb-0 is-revealing">
+								<a class="button button-primary button-shadow" href="asherif-resume-2019.pdf" target="_blank">My Resume</a>
+							</p>
+						</div>
+						<div class="hero-illustration">
+						</div>
                     </div>
-                    
-                    Message input
-                    <div class="field">
-                     <label class="label">Message</label>
-                     <div class="control">
-                       <textarea class="textarea" placeholder="Your design request"></textarea>
-                     </div>
-                   </div>
-                 </div>
-                 <div class="column"></div>
-              </div>
-              <div class="field is-grouped is-center">
-                 <p class="control">
-                    <a class="button is-medium is-primary is-rounded is-bold" href="https://github.com/DevOpt/">
-                    <strong class="has-text-weight-semibold">Request</strong>
-                    </a>
-                 </p>
-              </div>
-           </div>
+                </div>
+            </section>
+
+            <!-- Work Experience-->
+            <section class="features-config section text-center">
+                <div class="container">
+                    <div class="features-inner section-inner has-top-divider">
+						<div class="features-header text-center">
+							<div class="container-sm">
+								<h2 class="section-title mt-0">Work Experience</h2>
+								<!--p class="section-paragraph mb-0">I was chasing that paper since day one. #blessed🙏</p-->
+							</div>
+						</div>
+                        <div class="features-wrap">
+                            <div class="feature-config is-revealing">
+                                <div class="feature-inner-config">
+                                    <div class="feature-icon-config">
+                                        <img src="images/f-logo.svg" alt="Facebook">
+                                    </div>
+                                    <div class="feature-desc">
+                                        <h4 class="feature-title mod-title">Software Engineer Intern</h4>
+                                        <p class="text-sg">Facebook • Jun 2019 - Aug 2019</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-config is-revealing">
+                                <div class="feature-inner-config">
+                                    <div class="feature-icon-config">
+                                        <img src="images/jnj-logo.svg" alt="Johnson & Johnson">
+                                    </div>
+                                    <div class="feature-desc">
+                                        <h4 class="feature-title mod-title">Data Science Intern</h4>
+                                        <p class="text-sg">Johnson & Johnson • May 2018 - Aug 2018</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-config is-revealing">
+                                <div class="feature-inner-config">
+                                    <div class="feature-icon-config">
+                                        <img src="images/jnj-logo.svg" alt="Johnson & Johnson">
+                                    </div>
+                                    <div class="feature-desc">
+                                        <h4 class="feature-title mod-title">Software Engineer Co-op</h4>
+                                        <p class="text-sg">Johnson & Johnson • Jun 2017 - Dec 2017</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="feature-config is-revealing">
+                                <div class="feature-inner-config">
+                                    <div class="feature-icon-config">
+                                        <img src="images/rutgers-logo.svg" alt="Rutgers University">
+                                    </div>
+                                    <div class="feature-desc">
+                                        <h4 class="feature-title mod-title">Front End Developer</h4>
+                                        <p class="text-sg">Rutgers University • Feb 2017 - Jun 2019</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="features section text-center">
+                <div class="container">
+                    <div class="features-inner section-inner has-top-divider">
+						<div class="features-header text-center">
+							<div class="container-sm">
+								<h2 class="section-title mt-0">Projects</h2>
+								<p class="section-paragraph mb-0">From weekend hacks to solid work of art. 👨🏾‍💻</p>
+							</div>
+						</div>
+                        <div class="features-wrap">
+                            <div class="feature is-revealing">
+                              <a href="https://github.com/DevOpt/donation-bot">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="images/donation.svg" alt="Donation Bot">
+                                    </div>
+                                    <div class="card-content">
+                                        <h4 class="feature-title" style="margin-top:0px">Donation Bot</h4>
+                                        <p class="text-sg" style="margin-bottom:0px">Messenger Bot</p>
+                                    </div>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="feature is-revealing">
+                              <a href="https://www.amazon.com/Redox-Design-Quotes/dp/B074YPSYYR/">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="images/alexa.svg" alt="Design Quotes">
+                                    </div>
+                                    <div class="card-content">
+                                        <h4 class="feature-title" style="margin-top:0px">Design Quotes</h4>
+                                        <p class="text-sg" style="margin-bottom:0px">Alexa Skill</p>
+                                    </div>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="feature is-revealing">
+                              <a href="https://devpost.com/software/anadose">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="images/anadose.svg" alt="Anadose">
+                                    </div>
+                                    <div class="card-content">
+                                        <h4 class="feature-title" style="margin-top:0px">Anadose</h4>
+                                        <p class="text-sg" style="margin-bottom:0px">iOS App</p>
+                                    </div>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="feature is-revealing">
+                              <a href="http://www.azzanyadinisrael.com/">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <img src="images/website.svg" alt="Azzan">
+                                    </div>
+                                    <div class="card-content">
+                                        <h4 class="feature-title" style="margin-top:0px">Azzan</h4>
+                                        <p class="text-sg" style="margin-bottom:0px">Author's Website</p>
+                                    </div>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="cta-inner section-inner is-revealing" style="padding-top: 50px;padding-bottom: 40px;">
+                                <div class="cta-cta">
+                                    <a class="button button-primary button-shadow" href="https://github.com/DevOpt/" target="_blank">More on GitHub</a>
+                                </div>
+					        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Portfolio -->
+            <section class="hero" style="background: #FFE6DA;">
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0 is-revealing">Desgin Portfolio</h1>
+	                        <p class="hero-paragraph is-revealing">I do freelance graphic design specifically logo design, branding, and posters when I feel a little artsy sometimes. ‍🎨</p>
+	                        <p class="hero-cta mb-0 is-revealing">
+								<a class="button button-primary button-shadow" href="https://www.instagram.com/thegoodstuff.psd/">View Portfolio</a>
+							</p>
+						</div>
+						<div class="hero-illustration">
+						</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <!--section class="clients section text-center">
+                <div class="container">
+                    <div class="features-inner section-inner">
+						<div class="features-header text-center">
+							<div class="container-sm">
+								<h2 class="section-title mt-0">Skills</h2>
+                                 <ul class="list-reset mb-0">
+                                <li class="is-revealing">
+                                    <img src="dist/images/facebook-logo.svg" alt="Facebook logo">
+                                </li>
+                                <li class="is-revealing">
+                                    <img src="dist/images/jpmorgan.png" style="max-width: 137px; max-height: 31px; margin-top: 7px;" alt="Microsoft logo">
+                                </li>
+                                <li class="is-revealing">
+                                    <img src="dist/images/Google-logo.png" alt="Google logo" style="max-height: 36px; margin-top: 9px">
+                                </li>
+                                <li class="is-revealing">
+                                    <img src="dist/images/twitter.svg" style="max-height: 36px; margin-top: 7px;"alt="Twitter logo">
+                                </li>
+                                <li class="is-revealing">
+                                    <img src="dist/images/airbnb-logo.svg" alt="Airbnb logo">
+                                </li>
+                                <li class="is-revealing">
+                                    <img src="dist/images/microsoft-logo.svg" alt="Microsoft logo">
+                                </li>
+                                <li class="is-revealing">
+                                    <img src="dist/images/apple.png" style="max-height: 40px; margin-top: -3px;" alt="APPLE logo">
+                                </li>
+
+								<li class="is-revealing">
+									<img src="dist/images/Tesla-logo.png" style="width: 138px; height: 23px; margin-top: 9px"alt="Tesla logo">
+								</li>
+                            </ul>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </section-->
+
+            <!-- Skills -->
+            <section class="features section text-center">
+                <div class="container">
+                    <div class="features-inner section-inner has-top-divider">
+						<div class="features-header text-center">
+							<div class="container-sm">
+								<h2 class="section-title mt-0">Skills</h2>
+							</div>
+						</div>
+                        <div class="features-wrap">
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">Java</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">Python</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">R</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">JavaScript</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">NodeJS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">ReactJS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">AngularJS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">SQL</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">MongoDB</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">GraphQL</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">HTML</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">CSS</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">Adobe Photoshop</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">React Native</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">PHP</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">Git</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="is-revealing">
+                                <div class="pill">
+                                    <div class="pill-content">
+                                        <p class="text-xs" style="margin-bottom:0px">Mercurial</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Me-->
+			<section class="pricing section text-center">
+                <div class="container">
+                    <div class="features-inner section-inner has-top-divider">
+						<div class="features-header text-center">
+							<div class="container-sm">
+								<h2 class="section-title mt-0" id="about-me" >About Me</h2>
+								<p class="section-paragraph mb-0">I'm a senior majoring in Computer Engineering and minoring in Computer Science. My goal is to work as a software engineer focusing on web apps. To me, programming is the way I look at things. Besides my major, I have an extreme passion working with visuals from photography to UI/UX design.</p>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </section>
+
+			<!-- <section class="features-tabs section">
+                <div class="container">
+                    <div class="features-tabs-inner section-inner has-top-divider">
+						<div class="tabs-container">
+							<ul class="tabs-links">
+								<li class="is-revealing">
+									<a href="#tab-1" class="tab-link is-active">
+										<img src="dist/images/tabs-icon-01.svg" alt="Tabs icon 01">
+										<span class="h4 m-0">Amazing features</span>
+									</a>
+								</li>
+								<li class="is-revealing">
+									<a href="#tab-2" class="tab-link">
+										<img src="dist/images/tabs-icon-02.svg" alt="Tabs icon 02">
+										<span class="h4 m-0">Endless possibilities</span>
+									</a>
+								</li>
+								<li class="is-revealing">
+									<a href="#tab-3" class="tab-link">
+										<img src="dist/images/tabs-icon-03.svg" alt="Tabs icon 03">
+										<span class="h4 m-0">Ease of use</span>
+									</a>
+								</li>
+							</ul>
+							<div class="tabs-content">
+								<div id="tab-1" class="tab-panel is-active">
+									<h2>Discover</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<p class="mb-0">A arcu cursus vitae congue. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique.</p>
+								</div>
+								<div id="tab-2" class="tab-panel">
+									<h2>Power of customisation</h2>
+									<p>A arcu cursus vitae congue. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique.</p>
+									<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A arcu cursus vitae congue.</p>
+								</div>
+								<div id="tab-3" class="tab-panel">
+									<h2>Keep it simple</h2>
+									<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+									<p class="mb-0">Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt.</p>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </section> -->
+
+			<!-- <section class="testimonials section">
+				<div class="container">
+					<div class="testimonials-inner section-inner">
+						<div class="testimonials-header text-center text-light">
+							<h2 class="section-title mt-0">Testimonials</h2>
+						</div>
+						<div class="testimonials-wrap">
+							<div class="testimonial text-sm is-revealing">
+								<div class="testimonial-inner">
+									<div class="testimonial-main">
+										<div class="testimonial-body">
+											<p>I’ve read a ton of blog posts about how some startups hit this milestone with ease. They came up with an amazing idea that “just clicked”, made!</p>
+										</div>
+									</div>
+									<div class="testimonial-footer">
+										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial text-sm is-revealing">
+								<div class="testimonial-inner">
+									<div class="testimonial-main">
+										<div class="testimonial-body">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien. Quisque egestas diam in arcu cursus euismod quis.</p>
+										</div>
+									</div>
+									<div class="testimonial-footer">
+										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial text-sm is-revealing">
+								<div class="testimonial-inner">
+									<div class="testimonial-main">
+										<div class="testimonial-body">
+											<p>I’ve read a ton of blog posts about how some startups hit this milestone with ease. They came up with an amazing idea that “just clicked”, made!</p>
+										</div>
+									</div>
+									<div class="testimonial-footer">
+										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial text-sm is-revealing">
+								<div class="testimonial-inner">
+									<div class="testimonial-main">
+										<div class="testimonial-body">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien. Quisque egestas diam in arcu cursus euismod quis.</p>
+										</div>
+									</div>
+									<div class="testimonial-footer">
+										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial text-sm is-revealing">
+								<div class="testimonial-inner">
+									<div class="testimonial-main">
+										<div class="testimonial-body">
+											<p>I’ve read a ton of blog posts about how some startups hit this milestone with ease. They came up with an amazing idea that “just clicked”, made!</p>
+										</div>
+									</div>
+									<div class="testimonial-footer">
+										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial text-sm is-revealing">
+								<div class="testimonial-inner">
+									<div class="testimonial-main">
+										<div class="testimonial-body">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eleifend donec pretium vulputate sapien. Quisque egestas diam in arcu cursus euismod quis.</p>
+										</div>
+									</div>
+									<div class="testimonial-footer">
+										<div class="testimonial-name"><a href="#">@mikesmith</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section> -->
+
+
+			<!-- section class="cta section">
+				<div class="container">
+					<div class="cta-inner section-inner is-revealing">
+						<h3 class="section-title mt-0">New to the Bay Area?</h3>
+						<div class="cta-cta">
+							<a class="button button-primary button-shadow" href="https://onboarding.muslim.events" target="_blank">Check the onboarding guide</a>
+						</div>
+					</div>
+				</div>
+        <div style="font-size: 15px; text-align: center; color: #37424ea3; margin-bottom: 5px;">
+          <a style="" href=""></a>contact@minterns.org
         </div>
-      </section-->
+			</section-->
+        </main>
 
-      <!-- Skills section -->
-      <section class="hero is-medium has-bg-img">
-         <div class="hero-body has-text-centered">
+        <footer class="site-footer">
             <div class="container">
-               <p class="title has-text-centered">Skills</p>
-               <div class="columns">
-                  <div class="column">
-                     <a class="button is-rounded is-padding shadow">Java</a>
-                     <a class="button is-rounded is-padding shadow">JavaScript</a>
-                     <a class="button is-rounded is-padding shadow">Agaile Methodology</a>
-                     <a class="button is-rounded is-padding shadow">Node</a>
-                     <a class="button is-rounded is-padding shadow">Python</a>
-                     <a class="button is-rounded is-padding shadow">Software Development</a>
-                     <a class="button is-rounded is-padding shadow">R</a>
-                     <a class="button is-rounded is-padding shadow">Bootstrap</a>
-                     <a class="button is-rounded is-padding shadow">HTML/CSS</a>
-                     <a class="button is-rounded is-padding shadow">UI Design</a>
-                     <a class="button is-rounded is-padding shadow">Adobe Photoshop</a>
-                     <a class="button is-rounded is-padding shadow">Tableau</a>
-                     <a class="button is-rounded is-padding shadow">Git</a>
-                     <a class="button is-rounded is-padding shadow">Matlab</a>
-                     <a class="button is-rounded is-padding shadow">Machine Learning</a>
-                  </div>
-               </div>
+                <div class="site-footer-inner">
+                    <ul class="footer-social-links list-reset">
+                        <li>
+                            <a href="https://github.com/DevOpt">
+                                <span class="screen-reader-text">GitHub</span>
+                                <span class="icon" style="font-size: 18px;">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/abdurahman-sherif-a626619b/">
+                                <span class="screen-reader-text">LinkedIn</span>
+                                <span class="icon" style="font-size: 18px;">
+                                    <i class="fab fa-linkedin"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/abdurahman7d3a">
+                                <span class="screen-reader-text">Behance</span>
+                                <span class="icon" style="font-size: 18px;">
+                                    <i class="fab fa-behance"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/thegoodstuff.psd/">
+                                <span class="screen-reader-text">Instagram</span>
+                                <span class="icon" style="font-size: 18px;">
+                                    <i class="fab fa-instagram"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:ajs557@rutgers.com">
+                                <span class="screen-reader-text">Email</span>
+                                <span class="icon" style="font-size: 18px;">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul></br>
+                    <div style="text-align: center; flex: 50%;">Made with <i class="icon ion-heart" style="color: #E21221"></i> by Abdurahman Sherif</div>
+                </div>
             </div>
-         </div>
-      </section>
+        </footer>
+    </div>
 
-      <!-- About section -->
-      <section class="hero is-medium has-bg-img" id="about">
-         <div class="hero-body">
-            <div class="container">
-               <p class="title has-text-centered">About</p>
-               <div class="columns">
-                  <div class="column"></div>
-                  <div class="column is-one-fifth">
-                     <figure class="image shadow">
-                        <img src="images/profile.png">
-                     </figure>
-                  </div>
-                  <div class="column is-half">
-                     <p class="has-text-left">I'm a senior majoring in Computer Engineering and minoring in Computer Science. My goal is to work as a Mainframe software developer. To me, programming is the way I look at things. Besides my major, I have an extreme passion working with visuals from photography to UI/UX design.</p>
-                  </div>
-                  <div class="column"></div>
-               </div>
-            </div>
-         </div>
-      </section>
+    <script src="js/main.min.js"></script>
+</body>
 
-      <!-- Footer -->
-      <footer class="footer has-text-centered has-bg-img">
-         <div class="container">
-            <div class="columns">
-               <div class="column is-8-desktop is-offset-2-desktop">
-                 <a class="button is-rounded is-padding shadow fa-grey social" href="https://github.com/DevOpt/">
-                   <span class="icon">
-                   <i class="fab fa-github"></i>
-                   </span>
-                 </a>
-                 <a class="button is-rounded is-padding shadow fa-grey social" href="https://www.linkedin.com/in/abdurahman-sherif-a626619b/">
-                   <span class="icon">
-                   <i class="fab fa-linkedin"></i>
-                   </span>
-                 </a>
-                 <a class="button is-rounded is-padding shadow fa-grey social" href="https://www.behance.net/abdurahman7d3a">
-                   <span class="icon">
-                   <i class="fab fa-behance"></i>
-                   </span>
-                 </a>
-                 <a class="button is-rounded is-padding shadow fa-grey social" href="mailto:abdurahman.sherif@gmail.com">
-                   <span class="icon">
-                   <i class="fa fa-envelope"></i>
-                   </span>
-                 </a>
-                  <p style="margin-top: 1rem;">
-                     <small>
-                     Made with <i class="icon ion-heart" style="color: #E21221"></i> by Abdurahman Sherif
-                     </small>
-                  </p>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <script type="text/javascript" src="lib/main.js"></script>
-   </body>
 </html>
