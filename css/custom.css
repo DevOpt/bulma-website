@@ -1,0 +1,136 @@
+/* Custom fonts */
+@font-face {
+    font-family: 'averta-black';
+    src: url('../webfontkit/averta-black-webfont.woff2') format('woff2'),
+         url('../webfontkit/averta-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'averta-bold';
+    src: url('../webfontkit/averta-bold-webfont.woff2') format('woff2'),
+         url('../webfontkit/averta-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'averta-extrabold';
+    src: url('../webfontkit/averta-extra_bold-webfont.woff2') format('woff2'),
+         url('../webfontkit/averta-extra_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'averta-light';
+    src: url('../webfontkit/averta-light-webfont.woff2') format('woff2'),
+         url('../webfontkit/averta-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'averta-regular';
+    src: url('../webfontkit/averta-regular-webfont.woff2') format('woff2'),
+         url('../webfontkit/averta-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'averta-semibold';
+    src: url('../webfontkit/averta-semibold-webfont.woff2') format('woff2'),
+         url('../webfontkit/averta-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.button-orange {
+    background-color: #FDF3E7;
+    color: #E8AB62;
+    border-radius: 18px;
+    padding: 10px 24px;
+    text-align: center;
+    font-size: 15px;
+    display: inline-block;
+    font-family: 'averta-bold';
+    transition-duration: 0.5s;
+}
+
+.button-orange:hover {
+    /* box-shadow: 0 16px 48px rgba(32, 41, 50, 0.12);  */
+    transform: scale(1.1);
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+.design-section {
+    background: #FDF3E7;
+    border-radius: 42px;
+    margin: 14px 48px;
+}
+
+.blinking-cursor {
+    font-weight: 100;
+    color: #202932;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+  
+  @keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #202932;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #202932;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #202932;
+    }
+  }
+  
+  @-ms-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #202932;
+    }
+  }
+  
+  @-o-keyframes blink {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: #202932;
+    }
+  }

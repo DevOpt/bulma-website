@@ -1,35 +1,35 @@
-/* Custon fonts */
+/* Custom fonts */
 @font-face {
-    font-family: 'averta-blackuploaded_file';
-    src: url('averta-black-webfont.woff2') format('woff2'),
-         url('averta-black-webfont.woff') format('woff');
+    font-family: 'averta-black';
+    src: url('../webfontkit/averta-black-webfont.woff2') format('woff2'),
+         url('../webfontkit/averta-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'averta-bolduploaded_file';
-    src: url('averta-bold-webfont.woff2') format('woff2'),
-         url('averta-bold-webfont.woff') format('woff');
+    font-family: 'averta-bold';
+    src: url('../webfontkit/averta-bold-webfont.woff2') format('woff2'),
+         url('../webfontkit/averta-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'averta-extrabolduploaded_file';
-    src: url('averta-extra_bold-webfont.woff2') format('woff2'),
-         url('averta-extra_bold-webfont.woff') format('woff');
+    font-family: 'averta-extrabold';
+    src: url('../webfontkit/averta-extra_bold-webfont.woff2') format('woff2'),
+         url('../webfontkit/averta-extra_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'averta-lightuploaded_file';
-    src: url('averta-light-webfont.woff2') format('woff2'),
-         url('averta-light-webfont.woff') format('woff');
+    font-family: 'averta-light';
+    src: url('../webfontkit/averta-light-webfont.woff2') format('woff2'),
+         url('../webfontkit/averta-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -45,9 +45,9 @@
 }
 
 @font-face {
-    font-family: 'averta-semibolduploaded_file';
-    src: url('averta-semibold-webfont.woff2') format('woff2'),
-         url('averta-semibold-webfont.woff') format('woff');
+    font-family: 'averta-semibold';
+    src: url('../webfontkit/averta-semibold-webfont.woff2') format('woff2'),
+         url('../webfontkit/averta-semibold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -56,7 +56,7 @@
 html {
 	line-height: 1.15;
 	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -445,6 +445,7 @@ h6,
 
 h1,
 .h1 {
+	font-family: "averta-semibold" !important;
 	font-size: 42px;
 	line-height: 52px;
 	letter-spacing: -0.1px
@@ -1565,9 +1566,9 @@ label {
 
 .hero {
 	position: relative;
-	padding-top: 88px;
+	padding-top: 100px;
 	text-align: center;
-	z-index: 0
+	z-index: 0;
 }
 
 .hero .hero-left-decoration,
@@ -1612,7 +1613,7 @@ label {
 @media (min-width: 641px) {
 	.hero {
 		text-align: left;
-		padding-top: 100px
+		padding-top: 188px
 	}
 	.hero .hero-left-decoration {
 		display: block
