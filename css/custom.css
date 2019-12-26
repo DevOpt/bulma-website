@@ -65,8 +65,33 @@
     transition-duration: 0.5s;
 }
 
-.button-orange:hover {
-    /* box-shadow: 0 16px 48px rgba(32, 41, 50, 0.12);  */
+.button-green {
+    background-color: #DEF5F4;
+    color: #378A86;
+    border-radius: 18px;
+    padding: 10px 24px;
+    text-align: center;
+    font-size: 15px;
+    display: inline-block;
+    font-family: 'averta-bold';
+    transition-duration: 0.5s;
+}
+
+.button-purple {
+    background-color: #E5D4FF;
+    color: #832FFF;
+    border-radius: 18px;
+    padding: 10px 24px;
+    text-align: center;
+    font-size: 15px;
+    display: inline-block;
+    font-family: 'averta-bold';
+    transition-duration: 0.5s;
+}
+
+.button-orange:hover,
+.button-purple:hover,
+.button-green:hover {
     transform: scale(1.1);
 }
 

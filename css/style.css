@@ -635,7 +635,8 @@ code,
 kbd,
 tt,
 var {
-	background: #F5F6F7
+	background: #F5F6F7;
+	border-radius: 8px;
 }
 
 pre {
@@ -655,7 +656,7 @@ tt,
 var {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 	font-size: 16px;
-	padding: 2px 4px
+	padding: 4px 8px
 }
 
 abbr,
