@@ -2272,13 +2272,18 @@ main {
 
 /* custom css */
 .card {
-	border-radius: 2px;
+	border-radius: 32px;
 	background-color: white;
-	box-shadow: 0 16px 48px rgba(32, 41, 50, 0.12);
+	/* box-shadow: 0 16px 48px rgba(32, 41, 50, 0.12); */
 	color: #4a4a4a;
 	max-width: 100%;
 	position: relative;
-	}
+	border: 1px solid #dedfe0;
+}
+
+.card:hover{
+	background-color: #F5F6F7;	
+}
   
   .card-header {
 	background-color: none;
@@ -2311,6 +2316,11 @@ main {
   .card-image {
 	display: block;
 	position: relative;
+	padding: 10px;
+  }
+
+  .card-image img {
+	  border-radius: 24px;
   }
   
   .card-content {
@@ -2347,10 +2357,11 @@ main {
 		border-radius: 200px;
 		background-color: white;
 		margin: 10px 10px;
-		box-shadow: 0 16px 48px rgba(32, 41, 50, 0.12);
+		/* box-shadow: 0 16px 48px rgba(32, 41, 50, 0.12); */
 		color: #4a4a4a;
 		max-width: 100%;
 		position: relative;
+		border: 1px solid #dedfe0;
 	}
 
 	.pill-content {
